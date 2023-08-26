@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title th:text="${titulo}"> </title>
+    </head>
+    <body>
+        <h1 th:text="${titulo}"></h1>
+        <span th:text="${usuario.nombre}"></span>
+        <span th:text="${usuario.apellido}"></span>
+        <br>
+        <span th:if="${usuario.email}" th:text="${usuario.email}"></span>
+        <span th:if="${usuario.email == null}">El usuario no tiene correo</span>
+        <br>
+        <br>
+        <span th:text="${usuario2.nombre}"></span>
+        <span th:text="${usuario2.apellido}"></span>
+        <br>
+        <span th:if="${usuario2.email}" th:text="${usuario2.email}"></span>
+        <span th:if="${usuario2.email == null}">El usuario no tiene correo</span>
+        <br>
+        <br>
+        <span th:text="${usuario3.nombre}"></span>
+        <span th:text="${usuario3.apellido}"></span>
+        <br>
+        <span th:if="${usuario3.email}" th:text="${usuario3.email}"></span>
+        <span th:if="${usuario3.email == null}">El usuario no tiene correo</span>
+        <br>
+        <br>
+        <span th:text="${usuario4.nombre}"></span>
+        <span th:text="${usuario4.apellido}"></span>
+        <br>
+        <span th:if="${usuario4.email}" th:text="${usuario4.email}"></span>
+        <span th:if="${usuario4.email == null}">El usuario no tiene correo</span>
+        <br>
+        <br>
+        <span th:text="${usuario5.nombre}"></span>
+        <span th:text="${usuario5.apellido}"></span>
+        <br>
+        <span th:if="${usuario5.email}" th:text="${usuario5.email}"></span>
+        <span th:if="${usuario5.email == null}">El usuario no tiene correo</span>
+    </body>
+</html>
